@@ -61,6 +61,6 @@ OS commands can simply be run just as in a standard reverse shell:
 To run the command in a module use `run` command, followed by module name, command name, and any necessary parameters.
 For example, shown below is an example of running the `exec` command in the `core` module:
 
-`run core exec nmap -p10000 127.0.0.1`
+`run core exec "nmap -p10000 127.0.0.1"`
 
 ![Screenshot](https://raw.github.com/wiki/FilipBlazekovic/jRAT/Images/Image10.png)
