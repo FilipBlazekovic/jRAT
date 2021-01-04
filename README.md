@@ -2,16 +2,13 @@
 Remote administration toolkit that runs from memory written in Java
 
 - **Portable**
-  - Runs on Windows, Linux, MacOS, Android
+  - Runs on Windows, Linux, MacOS
 
 - **Modular design**
   - Additional functionality can be added at runtime by loading additional modules, and the functionality of jRAT can be extended by developing new modules.
 
 - **Runs from memory**
   - Only the initial stager is run from disk, the main payload (Stage) and any additional modules that are loaded are loaded and run using a class loader from memory. In case an additional module depends on shared libraries they are saved to a temporary file, loaded, and removed after loading.
-
-- **Encrypted**
-  - Network communication is encrypted using AES
 
 
 This remote administration toolkit consists of a simple stager that can be injected into other Java clases, or used as a standalone payload.
